@@ -8,6 +8,7 @@ Minimal gradle project Springboot OAuth 2 Resouce Server.
 - Generate new public key (apendix).
 - Rewrite all TODO's in source code.
 - Docker.
+- [OAuth 2.0 Authentication Server](https://github.com/ott1982/oauth2-authorization-server-only).
 
 # Development
 
@@ -29,10 +30,10 @@ oauth2-resource-server-only
 
 # Apendix
 
-## Get Public Key
+## Get public key
 
 ```sh
-certificate git:(master) ✗ keytool -export -keystore ../../oauth2-authorization-server-only/keystore/mykeystore.keystore -alias myalias -file mycertificate.cer
+keytool -export -keystore ../../oauth2-authorization-server-only/keystore/mykeystore.keystore -alias myalias -file mycertificate.cer
 openssl x509 -inform der -in mycertificate.cer -pubkey -noout
 ```
 
