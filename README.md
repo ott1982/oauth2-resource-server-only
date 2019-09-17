@@ -1,4 +1,35 @@
-# oauth2-resource-server-only
+# OAuth 2.0 Resource Server (only)
+
+Minimal gradle project Springboot OAuth 2 Resouce Server.
+
+**Requirements**
+
+- Pass as arguments application.yml properties.
+- Generate new public key (apendix).
+- Rewrite all TODO's in source code.
+- Docker.
+
+# Development
+
+```sh
+./gradlew clean bootRun
+```
+
+# Run
+
+```sh
+./gradlew clean build
+docker build --tag oauth2-resource-server-only -f ./docker/Dockerfile ./
+docker run -d \
+--name oauth2-resource-server-only_1 \
+-p 8082:8080 \
+--env-file $HOME/git/oauth2-resource-server-only/docker/env_file.properties \
+oauth2-resource-server-only
+```
+
+# 
+
+# 
 
 
 
