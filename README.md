@@ -27,12 +27,6 @@ docker run -d \
 oauth2-resource-server-only
 ```
 
-# 
-
-# 
-
-
-
 # Apendix
 
 ## Get Public Key
